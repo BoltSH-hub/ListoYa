@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+
+        <div class="add-task-container">
+            <input type="text" id="task-input" placeholder="Escribe una nueva tarea...">
+            <button id="add-task-button">Agregar Tarea</button>
+        </div>
+
+        <h2>Progreso</h2>
+        <div id="progress-bar-container" class="progress-bar-container">
+            <div id="progress-bar-fill" class="progress-bar-fill">
+                <span id="progress-bar-text">0%</span>
+            </div>
+        </div>
+
+        <h2>Tareas Pendientes</h2>
+        <ul id="task-list"></ul>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
